@@ -323,10 +323,23 @@
                         });
 
                         if (response.ok) {
-                            btn.textContent = 'Message Sent!';
+                            // Show success message
+                            btn.textContent = '✓ Message Sent!';
                             btn.style.backgroundColor = '#10b981';
                             contactForm.reset();
-                            window.location.href = "https://panditfinancial.com/success"; // Redirect
+
+                            // Show a nice alert
+                            const successDiv = document.createElement('div');
+                            successDiv.innerHTML = '<p style="color: #10b981; font-size: 1.1rem; margin-top: 1rem; text-align: center;"><strong>Thanks!</strong> We\'ll be in touch soon.</p>';
+                            contactForm.appendChild(successDiv);
+
+                            // Reset button after 5 seconds
+                            setTimeout(() => {
+                                btn.textContent = originalText;
+                                btn.style.backgroundColor = '';
+                                btn.disabled = false;
+                                successDiv.remove();
+                            }, 5000);
                         } else {
                             throw new Error('Failed');
                         }
