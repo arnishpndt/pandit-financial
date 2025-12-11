@@ -83,8 +83,8 @@ document.addEventListener('DOMContentLoaded', () => {
             const data = Object.fromEntries(formData.entries());
 
             try {
-                // Use relative path - works for both local (via proxy) and prod (Vercel)
-                const apiUrl = '/api/contact';
+                // Use Web3Forms API
+                const apiUrl = 'https://api.web3forms.com/submit';
 
                 const response = await fetch(apiUrl, {
                     method: 'POST',
