@@ -189,7 +189,12 @@
                         <p><strong>Waiting won’t change your future—taking action will. Let’s get started
                                 today.</strong></p>
                     </div>
-                    <form class="contact-form" action="#" method="POST">
+                    <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+                        <input type="hidden" name="subject" value="New Submission from Pandit Financial Website">
+                        <input type="hidden" name="redirect" value="https://panditfinancial.com/success">
+                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
                         <div class="form-group">
                             <input type="text" name="name" placeholder="Full Name" required>
                         </div>
