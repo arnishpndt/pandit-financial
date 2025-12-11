@@ -1,0 +1,42 @@
+:root {
+    /* Color Palette - Premium Ultra-Dark */
+    --color-bg-dark: #000000;
+    /* True Black for depth */
+    --color-bg-mesh: #0a0a0a;
+    /* Slightly lighter for gradients */
+
+    --color-glass-surface: rgba(255, 255, 255, 0.03);
+    --color-glass-border: rgba(255, 255, 255, 0.08);
+    --color-glass-highlight: rgba(255, 255, 255, 0.15);
+
+    /* Text Colors */
+    --color-text-main: #ffffff;
+    --color-text-muted: #a1a1aa;
+    /* Cool gray */
+    --color-text-accent: #d4d4d8;
+
+    /* Accents - Subtle Gold/White/Blue hints */
+    --color-primary: #ffffff;
+    /* White primary for clean modern look */
+    --color-accent-gold: #fbbf24;
+    /* Subtle gold for highlights */
+    --color-accent-glow: rgba(255, 255, 255, 0.2);
+
+    /* Typography - Modern Sans Only */
+    --font-heading: 'Inter', system-ui, -apple-system, sans-serif;
+    --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+
+    /* Spacing */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 2rem;
+    --spacing-lg: 4rem;
+    --spacing-xl: 8rem;
+
+    --border-radius-sm: 8px;
+    --border-radius-md: 16px;
+    --border-radius-lg: 24px;
+
+    --transition-speed: 0.4s;
+    --container-width: 1200px;
+}
