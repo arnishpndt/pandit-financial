@@ -713,12 +713,24 @@ section {
     justify-content: center;
     align-items: center;
     transition: opacity 0.8s ease-in-out, visibility 0.8s;
+    /* Fallback: Auto-hide after 3.5s if JS fails */
+    animation: auto-hide-loader 0.1s linear 3.5s forwards;
+}
+
+@keyframes auto-hide-loader {
+    to {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
 }
 
 #intro-loader.hidden {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+    animation: none;
+    /* JS control overrides fallback */
 }
 
 .loader-content {
