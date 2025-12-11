@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Wait a bit to show animation, then fade out
         setTimeout(() => {
             loader.classList.add('hidden');
-        }, 2200); // 2.2 seconds display time
+        }, 1000); // Reduced from 2200ms to 1000ms for faster entry
     }
 
     // Contact Form Handling (Real Backend)
